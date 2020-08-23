@@ -1,0 +1,35 @@
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab id="top-wear" label="Top Ware">
+    <div class="card-display">
+      <div *ngFor="let men of dataMenTopWare">
+        <img src={{men.image}}>
+        <p><strong>{{men.name}}</strong> </p>
+        <p>Sizes: {{men.size}}</p>
+        <p><strong>Rs. {{men.amount}}/-</strong></p>
+        <button mat-stroked-button color="warn">Add</button><br><br> 
+      </div>
+    </div>  
+  </mat-tab>
+  <mat-tab id="bottom-wear" label="Bottom Ware">
+    <div class="card-display">
+      <div *ngFor="let men of dataMenBottomWare">
+        <img src={{men.image}}>
+        <p><strong>{{men.name}}</strong> </p>
+        <p>Sizes: {{men.size}}</p>
+        <p><strong>Rs. {{men.amount}}/-</strong></p>
+        <button mat-stroked-button color="warn">Add</button><br><br> 
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab id="indian-wear" label="Indain & Festive Wear">
+    <div class="card-display">
+      <div *ngFor="let men of dataMenFestivalWare">
+        <img src={{men.image}}>
+        <p><strong>{{men.name}}</strong> </p>
+        <p>Sizes: {{men.size}}</p>
+        <p><strong>Rs. {{men.amount}}/-</strong></p>
+        <button mat-stroked-button color="warn">Add</button><br><br> 
+      </div>
+    </div>  
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,24 @@
+<div class="divSearch">
+  <input class="search" type="text" [(ngModel)]="searchingElement">
+  <button class="searchButton" (click)=check(searchingElement)>SEARCH<i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+
+<mat-divider></mat-divider>
+<div class="card-display">
+  <div *ngFor="let homeModel of dataHome">
+    <div *ngIf="homeModel.name==searchingElement && searchCheck ">
+      <img mat-card-image src={{homeModel.image}}>
+      <p><strong>{{homeModel.name}}</strong> </p>
+      <p>Sizes: {{homeModel.size}}</p>
+      <p><strong>Rs. {{homeModel.amount}}/-</strong></p>
+      <button mat-stroked-button color="warn">Add</button><br><br> 
+    </div>
+    <div *ngIf="homeCheck && searchingElement.length == 0">
+      <img mat-card-image src={{homeModel.image}}>
+      <p><strong>{{homeModel.name}}</strong> </p>
+      <p>Sizes: {{homeModel.size}}</p>
+      <p><strong>Rs. {{homeModel.amount}}/-</strong></p>
+      <button mat-stroked-button color="warn">Add</button><br><br> 
+    </div>
+  </div>
+</div>

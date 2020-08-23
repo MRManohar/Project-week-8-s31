@@ -1,0 +1,27 @@
+.container{
+    background-color: lightslategrey;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+}
+li{
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 10px;
+}
+li:hover{
+    color: black;
+}
+h4{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: white;
+    color: black;
+}

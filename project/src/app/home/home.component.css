@@ -1,0 +1,27 @@
+.card-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin-top: 10px;
+}
+button{
+    height: 40px;
+    width: 77%;
+}
+.divSearch{
+    margin: 20px 40%;
+}
+.search{
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+.searchButton{
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.fa-search{
+    margin-left: 20px;
+}

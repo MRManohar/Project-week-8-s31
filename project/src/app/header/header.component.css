@@ -1,0 +1,44 @@
+header{
+    background: orangered;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.container-right ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1em;
+    align-items: center;
+}
+.container-right ul li{
+    background: orangered;
+    color: white;
+}
+
+.container-right ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.container-right ul li a{  
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.fa-home{
+    align-items: center;
+    font-size: 20px;
+}
+button{
+    display: none;
+}

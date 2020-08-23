@@ -1,0 +1,42 @@
+<footer>
+    <div class="container">
+        <div class="men">
+            <h4>MEN</h4>
+            <li><a href="#" routerLink="men">Top - Wear</a></li>
+            <li><a href="#r" routerLink="men">Bottom - Wear</a></li>
+            <li><a href="#" routerLink="men">Indain & Festive Wear</a></li>
+        </div>
+        <div class="women">
+            <h4>WOMEN</h4>
+            <li><a href="#" routerLink="women">Indain Wear</a></li>
+            <li><a href="#" routerLink="women">Western Wear</a></li>
+        </div>
+        <div class="kid">
+            <h4>KID</h4>
+                <li><a href="#" routerLink="kid">Boys Clothing</a></li>
+                <li><a href="#" routerLink="kid">Girls Clothing</a></li>
+        </div>
+        <div class="aboutUs">
+            <h4>About Us</h4>
+            <p>MR Online Dress Materials</p>
+            <p>ABC Street DEF nagar</p>
+            <p>GHI Dist. Pin:- 123456</p>
+            <p>email:- abc@def.ghi</p>
+            <p><a href="#" routerLink = "apis">API</a></p>
+        </div>
+        <div class="contactUs">
+            <h4>Contact Us</h4>
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Enter your name"><br>
+                <label>Email:</label><br>
+                <input type="text" placeholder="Enter your email ID"><br>
+                <label>Mobile Number:</label><br>
+                <input type="text" placeholder="Enter your mobile number"><br>
+                <label>Comments</label><br>
+                <textarea name="comment" rows="4" cols="35" placeholder="Write your comments or suggestions"></textarea><br>
+                <button mat-stroked-button (click)="openSnackBar('We received your suggestion','Thank you')">Send Message</button>
+            </form>
+        </div>
+    </div>
+</footer>

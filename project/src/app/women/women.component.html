@@ -1,0 +1,24 @@
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Indian Wear">
+        <div class="card-display">
+            <div *ngFor="let women of dataWomenIndianWare">
+              <img mat-card-image src={{women.image}}>
+              <p><strong>{{women.name}}</strong> </p>
+              <p>Sizes: {{women.size}}</p>
+              <p><strong>Rs. {{women.amount}}/-</strong></p>
+              <button mat-stroked-button color="warn">Add</button><br><br> 
+            </div>
+          </div>
+    </mat-tab>
+    <mat-tab label="Western Ware">
+      <div class="card-display">
+        <div *ngFor="let women of dataWomenWesternWear">
+          <img mat-card-image src={{women.image}}>
+          <p><strong>{{women.name}}</strong> </p>
+          <p>Sizes: {{women.size}}</p>
+          <p><strong>Rs. {{women.amount}}/-</strong></p>
+          <button mat-stroked-button color="warn">Add</button><br><br> 
+        </div>
+      </div>
+    </mat-tab>
+</mat-tab-group>

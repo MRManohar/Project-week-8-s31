@@ -1,0 +1,24 @@
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Boys Clothing">
+        <div class="card-display">
+            <div *ngFor="let kid of dataKidBoysClothing">
+              <img mat-card-image src={{kid.image}}>
+              <p><strong>{{kid.name}}</strong> </p>
+              <p>Sizes: {{kid.size}}</p>
+              <p><strong>Rs. {{kid.amount}}/-</strong></p>
+              <button mat-stroked-button color="warn">Add</button><br><br> 
+            </div>
+          </div>
+    </mat-tab>
+    <mat-tab label="Girls  Clothing">
+      <div class="card-display">
+        <div *ngFor="let kid of dataKidGirlsClothing">
+          <img mat-card-image src={{kid.image}}>
+          <p><strong>{{kid.name}}</strong> </p>
+          <p>Sizes: {{kid.size}}</p>
+          <p><strong>Rs. {{kid.amount}}/-</strong></p>
+          <button mat-stroked-button color="warn">Add</button><br><br> 
+        </div>
+      </div>
+    </mat-tab>
+</mat-tab-group>
